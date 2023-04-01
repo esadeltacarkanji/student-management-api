@@ -19,7 +19,7 @@ namespace StudentManagementAppTests.Service
                 context.Course.Add(new Course
                 {
                     CourseId = 1,
-                    Name = "Math",
+                    Name = "Data Structure",
                     MaxNumberOfStudents = 25,
                     Students = new List<Student>
                 {
@@ -31,13 +31,13 @@ namespace StudentManagementAppTests.Service
                 context.Course.Add(new Course
                 {
                     CourseId = 2,
-                    Name = "Science",
+                    Name = "Calculus",
                     MaxNumberOfStudents = 30,
                     Students = new List<Student>
-        {
-            new Student { Id = 3, FirstName = "John" , Age = 21 , Email ="john@gmail.com" , Gender = "Male", LastName = "Doe"},
-            new Student { Id = 4, FirstName = "Jane", Age = 20, Email ="jane@gmail.com" , Gender = "Female", LastName = "Doe" }
-        }
+                {
+                     new Student { Id = 3, FirstName = "Ana" , Age = 21 , Email ="ana@gmail.com" , Gender = "Female", LastName = "Doka"},
+                     new Student { Id = 4, FirstName = "Beni", Age = 20, Email ="beni@gmail.com" , Gender = "Female", LastName = "Tirana" }
+                }
                 });
 
                 context.SaveChanges();
