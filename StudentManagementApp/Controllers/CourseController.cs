@@ -33,7 +33,7 @@ namespace StudentManagementApp.Controllers
         }
 
         [HttpPut]
-        [Route("AssignStudentToCourse/{courseId,studentId}")]
+        [Route("AssignStudentToCourse")]
         public async Task<IActionResult> AssignStudentToCourse(int courseId, int studentId)
         {
             try
