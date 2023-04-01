@@ -20,7 +20,7 @@ namespace StudentManagementApp.Service
         {
             var course = await _context.Course.Include(a => a.Students).FirstOrDefaultAsync(a => a.CourseId == courseId);
             var student = await _context.Students.FindAsync(studentId);
-            if (course?.Students.Count >= course?.MaxNumberOfStudents)
+            if (course?.Students.Count >= course?.MaxNumberOfStudents || course == null || student == null)
             {
                 return false;
             }
